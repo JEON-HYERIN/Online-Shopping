@@ -1,0 +1,175 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* TRANSITION */
+  --transition-duration: 350ms;
+}
+
+/* COMMON */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3F454D;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+img {
+  display: block;
+}
+
+/* BUTTON */
+.btn {
+  /* width: 90px; */
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.btn--blue {
+  background-color: var(--color-blue);
+}
+
+.btn.btn--yellow {
+  background-color: var(--color-yellow);
+}
+
+.btn.btn--pink {
+  background-color: var(--color-pink);
+}
+
+.hide {
+  position: absolute;
+  left: -5000px;
+}
+
+#wrap {
+  /* max-width: 700px; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8px;
+}
+
+#main {
+  overflow: scroll;
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  transition: var(--transition-duration);
+}
+
+header h1:hover {
+  transform: scale(1.1);
+}
+
+header h1 a {
+  display: block;
+  width: 100px;
+}
+
+header h1 a img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .icon-group .icon {
+  width: 100px;
+  padding: 1px 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+nav .icon-group .icon,
+nav .btn-group .btn {
+  transition: var(--transition-duration);
+}
+
+nav .icon-group .icon:hover,
+nav .btn-group .btn:hover {
+  transform: scale(1.1);
+}
+
+nav .icon-group .icon img {
+  width: 100%;
+}
+
+nav .btn-group .btn {
+  margin-right: 8px;
+}
+
+nav .btn-group li:last-child .btn {
+  margin-right: 0;
+}
+
+
+/* MAIN */
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#main .type {
+  width: 100%;
+}
+
+#main .type ul.t-shirt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#main .type ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
