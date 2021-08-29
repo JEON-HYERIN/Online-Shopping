@@ -71,13 +71,10 @@ img {
 }
 
 #wrap {
+  height: 100%;
   /* max-width: 700px; */
   /* margin: 8px auto 8px; */
   margin: 8px;
-}
-
-#main {
-  overflow-y: scroll;
 }
 
 
@@ -118,7 +115,8 @@ nav ul {
 }
 
 nav .icon-group .icon {
-  width: 100px;
+  width: 60px;
+  height: 60px;
   padding: 1px 6px;
   margin-right: 8px;
   cursor: pointer;
@@ -150,21 +148,16 @@ nav .btn-group li:last-child .btn {
 /* MAIN */
 #main {
   width: 100%;
-  /* width: 60%; */
   height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-}
-
-#main .all {
-  overflow: hidden;
-  display: block;
+  overflow-y: auto;
 }
 
 #main .all ul.clothes {
-  
+  /* height: 60%; */
 }
 
 #main .all,
@@ -176,12 +169,12 @@ nav .btn-group li:last-child .btn {
 #main .all ul,
 #main .type ul,
 #main .color ul {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
+
 #main .all ul li,
 #main .type ul li,
 #main .color ul li {
@@ -199,7 +192,8 @@ nav .btn-group li:last-child .btn {
 #main .all ul li img,
 #main .type ul li img ,
 #main .color ul li img {
-  width: 60px;
+  width: 50px;
+  height: 50px;
   margin-right: 8px;
 }
 
@@ -228,5 +222,10 @@ nav .btn-group li:last-child .btn {
   nav .icon-group .icon {
     width: 80px;
     margin-bottom: 8px;
+    margin-right: 0;
+  }
+
+  #main .all ul.clothes {
+    /* height: auto; */
   }
 }
