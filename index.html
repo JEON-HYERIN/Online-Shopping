@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css" />
-    <script src="src/main.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -21,21 +21,21 @@
         <nav>
           <h2 class="hide">메뉴</h2>
           <ul class="icon-group">
-            <li class="icon icon1">
+            <li class="icon icon1" data-filter="t-shirt">
               <img src="./img/blue_t.png" alt="t-shirt button" />
             </li>
-            <li class="icon icon2">
+            <li class="icon icon2" data-filter="pants">
               <img src="./img/blue_p.png" alt="pants button" />
             </li>
-            <li class="icon icon3">
+            <li class="icon icon3" data-filter="skirt">
               <img src="./img/blue_s.png" alt="skirt button" />
             </li>
           </ul>
           
           <ul class="btn-group">
-            <li><button class="btn btn--blue">Blue</button></li>
-            <li><button class="btn btn--yellow">Yellow</button></li>
-            <li><button class="btn btn--pink">Pink</button></li>
+            <li><button class="btn btn--blue" data-filter="blue">Blue</button></li>
+            <li><button class="btn btn--yellow" data-filter="yellow">Yellow</button></li>
+            <li><button class="btn btn--pink" data-filter="pink">Pink</button></li>
           </ul>
         </nav>
       </header>
@@ -44,7 +44,7 @@
       <section id="main">
         <h3 class="hide">옷고르기</h3>
         <div class="type">
-          <ul class="t-shirt">
+          <ul class="t-shirt" data-type="t-shirt">
             <li>
               <img src="./img/blue_t.png" alt="" />
               <span>male, large size</span>
@@ -55,11 +55,11 @@
             </li>
             <li>
               <img src="./img/pink_t.png" alt="" />
-              <span>female, large size</span>
+              <span>female, small size</span>
             </li>
 
           </ul>
-          <ul class="pants">
+          <ul class="pants" data-type="pants">
             <li>
               <img src="./img/blue_p.png" alt="" />
               <span>male, large size</span>
@@ -70,26 +70,26 @@
             </li>
             <li>
               <img src="./img/pink_p.png" alt="" />
-              <span>female, large size</span>
+              <span>female, small size</span>
             </li>
           </ul>
-          <ul class="skirt">
+          <ul class="skirt" data-type="skirt">
             <li>
               <img src="./img/blue_s.png" alt="" />
-              <span>male, large size</span>
+              <span>female, large size</span>
             </li>
             <li>
               <img src="./img/yellow_s.png" alt="" />
-              <span>male, large size</span>
+              <span>female, large size</span>
             </li>
             <li>
               <img src="./img/pink_s.png" alt="" />
-              <span>female, large size</span>
+              <span>female, small size</span>
             </li>
           </ul>
         </div>
         <div class="color">
-          <ul class="blue-clothes">
+          <ul class="blue-clothes" data-type="blue">
             <li>
               <img src="./img/blue_t.png" alt="" />
               <span>male, large szie</span>
@@ -103,7 +103,7 @@
               <span>female, large szie</span>
             </li>
           </ul>
-          <ul class="yellow-clothes">
+          <ul class="yellow-clothes" data-type="yellow"> 
             <li>
               <img src="./img/yellow_t.png" alt="" />
               <span>male, large szie</span>
@@ -117,14 +117,14 @@
               <span>female, large szie</span>
             </li>
           </ul>
-          <ul class="pink-clothes">
+          <ul class="pink-clothes" data-type="pink">
             <li>
               <img src="./img/pink_t.png" alt="" />
-              <span>female, large szie</span>
+              <span>female, small szie</span>
             </li>
             <li>
               <img src="./img/pink_p.png" alt="" />
-              <span>female, large szie</span>
+              <span>female, small szie</span>
             </li>
             <li>
               <img src="./img/pink_s.png" alt="" />

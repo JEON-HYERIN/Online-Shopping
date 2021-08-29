@@ -68,17 +68,13 @@ img {
 }
 
 #wrap {
-  /* max-width: 700px; */
+  max-width: 700px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 8px;
+  margin: 8px auto 8px;
 }
 
 #main {
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 
@@ -111,6 +107,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 nav ul {
@@ -156,11 +153,13 @@ nav .btn-group li:last-child .btn {
   /* justify-content: center; */
 }
 
-#main .type {
+#main .type,
+#main .color {
   width: 100%;
 }
 
-#main .type ul.t-shirt {
+#main .type ul,
+#main .color ul {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -168,8 +167,20 @@ nav .btn-group li:last-child .btn {
   align-content: center;
 }
 
-#main .type ul li {
+#main .type ul li,
+#main .color ul li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  background-color: #fafafa;
+  margin-bottom: 8px;
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+#main .type ul li img ,
+#main .color ul li img {
+  width: 60px;
+  margin-right: 8px;
 }
