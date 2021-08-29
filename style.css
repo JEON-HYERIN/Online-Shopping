@@ -184,3 +184,8 @@ nav .btn-group li:last-child .btn {
   width: 60px;
   margin-right: 8px;
 }
+
+
+#main ul.clothes.invisible {
+  display: none;
+}
