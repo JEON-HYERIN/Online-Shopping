@@ -158,11 +158,22 @@ nav .btn-group li:last-child .btn {
   /* justify-content: center; */
 }
 
+#main .all {
+  overflow: hidden;
+  display: block;
+}
+
+#main .all ul.clothes {
+  
+}
+
+#main .all,
 #main .type,
 #main .color {
   width: 100%;
 }
 
+#main .all ul,
 #main .type ul,
 #main .color ul {
   width: 100%;
@@ -171,7 +182,7 @@ nav .btn-group li:last-child .btn {
   justify-content: center;
   align-content: center;
 }
-
+#main .all ul li,
 #main .type ul li,
 #main .color ul li {
   display: flex;
@@ -185,6 +196,7 @@ nav .btn-group li:last-child .btn {
   width: 99%;
 }
 
+#main .all ul li img,
 #main .type ul li img ,
 #main .color ul li img {
   width: 60px;
